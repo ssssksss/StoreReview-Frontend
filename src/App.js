@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './Containers/Header/Header';
+import Main from './Containers/Main/Main';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+//import Testabc from './Testabc';
+import styled from 'styled-components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+	const Iframe = styled.iframe`
+		width: 800px;
+		height: 800px;
+	`;
+
+	return (
+		<>
+			<BrowserRouter>
+				<div className="app">
+					<Header />
+					<Main />
+				</div>
+			</BrowserRouter>
+			{/*<Testabc />*/}
+		</>
+	)
 }
 
 export default App;
