@@ -1,6 +1,6 @@
 import React from 'react';
 import LoginForm from './LoginForm';
-import LoginApiButton from './LoginApiButton';
+import LoginApis from './LoginApis';
 import LoginLogo from './LoginLogo';
 import LoginOption from './LoginOption';
 
@@ -11,7 +11,7 @@ const Login = () => {
 		<div>
 			<LoginLogo />
 			<LoginForm />
-			<LoginApiButton />
+			<LoginApis />
 			<LoginOption />
 		</div>
 	);

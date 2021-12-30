@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-//import Modal from 'react-modal';
-import naverimg from '../../Assets/Images/naverapi_100x100.svg';
 import kakaoimg from '../../Assets/Images/kakaoapi_100x100.svg';
 import googleimg from '../../Assets/Images/googleapi_100x100.svg';
 import PortalDOM from '../Modal/PortalDOM';
 import ModalScreen from '../Modal/ModalScreen';
+import NaverLoginApi from '../../Api/NaverLogin/NaverLoginApi';
+import { KAKAO_AUTH_URL } from "../../Api/KakaoLogin/KakaoLoginUrl";
 
-const LoginApiButton = () => {
+
+const LoginApis = () => {
 
 	const Container = styled.div`
 		height: 80px;
@@ -21,7 +22,6 @@ const LoginApiButton = () => {
 			display: flex;
 			flex-flow: wrap column;
 			align-items: center;
-			background-color: red;
 	`;
 
 	const Img = styled.img`
@@ -39,23 +39,20 @@ const LoginApiButton = () => {
 
 	return (
 		<Container>
-			{/*href="https://nid.naver.com/oauth2.0/authorize?response_type=code&
-			client_id=u3Ph4ShKYsXliuKNI0GI&state=STATE_STRING&redirect_uri=http://localhost:3000/loginpage"
-				target="_blank" rel="noopener noreferrer"*/}
-			<LoginButton onClick={() => setModalOpen(true)}>
-				<Img src={naverimg} />
-				<small> 네이버 간편로그인 </small>
-			</LoginButton>
-			<LoginButton onClick={() => setModalOpen(true)}>
-				<Img src={kakaoimg} />
-				<small> 카카오 간편로그인 </small>
+
+			{/*<NaverLoginApi onClick={() => setModalOpen(true)}> </NaverLoginApi>*/}
+
+			<NaverLoginApi />
+
+
+			<LoginButton href={KAKAO_AUTH_URL} >
+				<Img src={kakaoimg} ></Img>
+				<span>카카오계정 로그인</span>
 			</LoginButton>
 			<LoginButton onClick={() => setModalOpen(true)}>
 				<Img src={googleimg} />
 				<small> 구글 간편로그인 </small>
 			</LoginButton>
-
-			<button onClick={() => setModalOpen(true)}> 버튼 </button>
 			{modalOpen &&
 				<PortalDOM>
 					<ModalScreen onClose={handleCloseModal}>
@@ -63,9 +60,8 @@ const LoginApiButton = () => {
 				</PortalDOM>
 			}
 
-
 		</Container>
 	);
 };
 
-export default LoginApiButton;
+export default LoginApis;
