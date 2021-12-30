@@ -44,7 +44,6 @@ const LoginApis = () => {
 
 			<NaverLoginApi />
 
-
 			<LoginButton href={KAKAO_AUTH_URL} >
 				<Img src={kakaoimg} ></Img>
 				<span>카카오계정 로그인</span>
@@ -56,7 +55,8 @@ const LoginApis = () => {
 			{modalOpen &&
 				<PortalDOM>
 					<ModalScreen onClose={handleCloseModal}>
-					</ModalScreen>;
+
+					</ModalScreen>
 				</PortalDOM>
 			}
 

@@ -33,7 +33,6 @@ const NaverLoginApi = () => {
 					window.close()
 				}
 				onFailure={() => console.error("")}
-
 			>
 			</NaverLogin>
 		</>

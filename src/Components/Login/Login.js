@@ -4,7 +4,6 @@ import LoginApis from './LoginApis';
 import LoginLogo from './LoginLogo';
 import LoginOption from './LoginOption';
 
-
 const Login = () => {
 
 	return (
