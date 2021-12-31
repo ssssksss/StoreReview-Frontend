@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/StoreReview-Frontend/static/css/main.1037d3d6.css",
-    "main.js": "/StoreReview-Frontend/static/js/main.ed91ba4d.js",
+    "main.css": "/StoreReview-Frontend/static/css/main.b2e2b705.css",
+    "main.js": "/StoreReview-Frontend/static/js/main.db5395be.js",
     "static/js/787.774729bc.chunk.js": "/StoreReview-Frontend/static/js/787.774729bc.chunk.js",
     "static/media/googleapi_100x100.svg": "/StoreReview-Frontend/static/media/googleapi_100x100.37811a9419a4e0d0d07b95bfb35cf290.svg",
     "index.html": "/StoreReview-Frontend/index.html",
     "static/media/kakaoapi_100x100.svg": "/StoreReview-Frontend/static/media/kakaoapi_100x100.28b964ca6416b10a07a3cda67fdd3456.svg",
     "static/media/naverapi_100x100.svg": "/StoreReview-Frontend/static/media/naverapi_100x100.1bc462e246a30e04f53a87fd0e8f8bc0.svg",
-    "main.1037d3d6.css.map": "/StoreReview-Frontend/static/css/main.1037d3d6.css.map",
-    "main.ed91ba4d.js.map": "/StoreReview-Frontend/static/js/main.ed91ba4d.js.map",
+    "main.b2e2b705.css.map": "/StoreReview-Frontend/static/css/main.b2e2b705.css.map",
+    "main.db5395be.js.map": "/StoreReview-Frontend/static/js/main.db5395be.js.map",
     "787.774729bc.chunk.js.map": "/StoreReview-Frontend/static/js/787.774729bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1037d3d6.css",
-    "static/js/main.ed91ba4d.js"
+    "static/css/main.b2e2b705.css",
+    "static/js/main.db5395be.js"
   ]
 }
