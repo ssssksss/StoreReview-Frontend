@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import kakaoimg from '../../Assets/Images/kakaoapi_100x100.svg';
 import googleimg from '../../Assets/Images/googleapi_100x100.svg';
-import PortalDOM from '../Modal/PortalDOM';
-import ModalScreen from '../Modal/ModalScreen';
+//import PortalDOM from '../../Oraganisms/Modal/PortalDOM';
+//import ModalScreen from '../../Oraganisms/Modal/ModalScreen';
 import NaverLoginApi from '../../Api/NaverLogin/NaverLoginApi';
 import { KAKAO_AUTH_URL } from "../../Api/KakaoLogin/KakaoLoginUrl";
 
@@ -52,13 +52,13 @@ const LoginApis = () => {
 				<Img src={googleimg} />
 				<small> 구글 간편로그인 </small>
 			</LoginButton>
-			{modalOpen &&
+			{/*{modalOpen &&
 				<PortalDOM>
 					<ModalScreen onClose={handleCloseModal}>
 
 					</ModalScreen>
 				</PortalDOM>
-			}
+			}*/}
 
 		</Container>
 	);

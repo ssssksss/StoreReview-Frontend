@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import Testabc from '../../Testabc';
 
 const ModalScreen = ({ onClose }) => {
 
@@ -37,7 +36,6 @@ const ModalScreen = ({ onClose }) => {
 	return (
 		<Container>
 			<Content>
-				<Testabc />
 				<button onClick={onClose}> 종료 </button>
 			</Content>
 		</Container>

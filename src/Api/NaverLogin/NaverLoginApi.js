@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import NaverLogin from 'react-naver-login';
 import naverimg from '../../Assets/Images/naverapi_100x100.svg';
 import styled from 'styled-components';
 
@@ -19,22 +18,10 @@ const NaverLoginApi = () => {
 
 	return (
 		<>
-			<NaverLogin
-				//네이버 로그인 어플리케이션에 있는 ID와 URL을 적어준다.
-				clientId='u3Ph4ShKYsXliuKNI0GI'
-				callbackUrl='http://127.0.0.1:3000'
-				render={(props) =>
-					<LoginButton onClick={props.onClick}>
-						<Img src={naverimg} />
-						<small> 네이버 간편로그인 </small>
-					</LoginButton>}
-				onSuccess={(naverUser) =>
-					console.log(naverUser),
-					window.close()
-				}
-				onFailure={() => console.error("")}
-			>
-			</NaverLogin>
+			<LoginButton>
+				<Img src={naverimg} />
+				<small> 네이버 간편로그인 </small>
+			</LoginButton>
 		</>
 	);
 };
