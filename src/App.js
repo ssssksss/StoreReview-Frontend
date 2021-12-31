@@ -1,27 +1,24 @@
 import React from 'react';
-import Header from './Containers/Header/Header';
-import Main from './Containers/Main/Main';
-import './App.css';
 import { BrowserRouter } from 'react-router-dom';
-//import Testabc from './Testabc';
 import styled from 'styled-components';
+import Main from './Components/Templates/Main';
+import Header from './Components/Templates/Header';
 
 const App = () => {
 
-	const Iframe = styled.iframe`
-		width: 800px;
-		height: 800px;
+	const Container = styled.div`
+		display: flex;
+		flex-wrap: wrap;
 	`;
 
 	return (
 		<>
 			<BrowserRouter>
-				<div className="app">
+				<Container>
 					<Header />
 					<Main />
-				</div>
+				</Container>
 			</BrowserRouter>
-			{/*<Testabc />*/}
 		</>
 	)
 }

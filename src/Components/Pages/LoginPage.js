@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Login from '../Components/Login/Login';
+import Login from '../Oraganisms/Login'
 
 const LoginPage = () => {
 
-	const LoginContainer = styled.div`
+	const Container = styled.div`
 		margin: auto;
 		width: 400px;
 		height: 70vh;
@@ -14,9 +14,9 @@ const LoginPage = () => {
 
 	return (
 		<>
-			<LoginContainer>
+			<Container>
 				<Login />
-			</LoginContainer>
+			</Container>
 		</>
 	)
 }
