@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+const Button = styled.button`
+width: 60px;
+height: 40px;
+`
+
 const Navbar = () => {
 
-	const Button = styled.button`
-		width: 60px;
-		height: 40px;
-	`;
 
 	return (
 		<>
