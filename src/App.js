@@ -4,12 +4,13 @@ import styled from 'styled-components';
 import Main from './Components/Templates/Main';
 import Header from './Components/Templates/Header';
 
+const Container = styled.div`
+display: flex;
+flex-wrap: wrap;
+`
+
 const App = () => {
 
-	const Container = styled.div`
-		display: flex;
-		flex-wrap: wrap;
-	`;
 
 	return (
 		<>

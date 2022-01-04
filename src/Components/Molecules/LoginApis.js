@@ -7,28 +7,28 @@ import googleimg from '../../Assets/Images/googleapi_100x100.svg';
 import NaverLoginApi from '../../Api/NaverLogin/NaverLoginApi';
 import { KAKAO_AUTH_URL } from "../../Api/KakaoLogin/KakaoLoginUrl";
 
+const Container = styled.div`
+height: 80px;
+display: flex;
+padding: 0px; 10px;
+justify-content: space-around;
+align-items: center;
+`
+
+const LoginButton = styled.a`
+	display: flex;
+	flex-flow: wrap column;
+	align-items: center;
+`
+
+const Img = styled.img`
+width: 40px;
+height: 40px;
+margin-bottom: 6px;
+`
 
 const LoginApis = () => {
 
-	const Container = styled.div`
-		height: 80px;
-		display: flex;
-		padding: 0px; 10px;
-		justify-content: space-around;
-		align-items: center;
-	`;
-
-	const LoginButton = styled.a`
-			display: flex;
-			flex-flow: wrap column;
-			align-items: center;
-	`;
-
-	const Img = styled.img`
-		width: 40px;
-		height: 40px;
-		margin-bottom: 6px;
-	`;
 
 	const [modalOpen, setModalOpen] = useState(false);
 
